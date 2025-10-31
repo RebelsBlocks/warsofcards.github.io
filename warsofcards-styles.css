@@ -194,7 +194,7 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 14px;
-\tgap: 8px;
+	gap: 8px;
 }
 
 .nav-button {
@@ -269,4 +269,22 @@ a:hover {
     .step-number {
         align-self: flex-start;
     }
+}
+
+/* Desktop polish: solid cards, soft backdrop, richer shadows */
+@media (min-width: 1024px) {
+	body {
+		background: linear-gradient(180deg, rgb(var(--gray-light)) 0%, rgb(var(--white)) 60%);
+	}
+
+	.outer-container {
+		background: rgb(var(--white));
+		border-color: rgba(var(--gray-medium), 0.6);
+		box-shadow: 0 6px 24px rgba(var(--black), 0.12), 0 2px 8px rgba(var(--black), 0.06);
+	}
+
+	.content-section {
+		background: rgb(var(--white));
+		border-color: rgba(var(--gray-medium), 0.4);
+	}
 }
