@@ -1,13 +1,11 @@
 :root {
-    /* Classic Apple Black & White Palette */
-    --white: 255, 255, 255;
-    --black: 0, 0, 0;
-    --gray-light: 245, 245, 245;
-    --gray-medium: 200, 200, 200;
-    --gray-dark: 100, 100, 100;
-    
-    /* Theme colors - classic Apple minimalism */
-    --text-color: rgb(var(--black));
+	--white: 255, 255, 255;
+	--black: 0, 0, 0;
+	--gray-light: 245, 245, 245;
+	--gray-medium: 200, 200, 200;
+	--gray-dark: 100, 100, 100;
+	
+	--text-color: rgb(var(--black));
     --background-color: rgba(var(--white), 0.98);
     --project-background: rgba(var(--white), 1);
     --accent-color: rgb(var(--black));
@@ -218,9 +216,6 @@ a:hover {
 	box-shadow: 0 2px 4px rgba(var(--black), 0.1);
 }
 
-/* Loading screen removed */
-
-/* Mobile Responsive */
 @media (max-width: 768px) {
 	.outer-container {
 		width: 95%;
@@ -271,7 +266,6 @@ a:hover {
     }
 }
 
-/* Desktop polish: solid cards, soft backdrop, richer shadows */
 @media (min-width: 1024px) {
 	body {
 		background: linear-gradient(180deg, rgb(var(--gray-light)) 0%, rgb(var(--white)) 60%);
@@ -286,5 +280,16 @@ a:hover {
 	.content-section {
 		background: rgb(var(--white));
 		border-color: rgba(var(--gray-medium), 0.4);
+	}
+
+	.menu-grid {
+		grid-template-columns: 1fr;
+		max-width: 520px;
+		margin: 1.25rem auto;
+	}
+
+	.menu-item {
+		padding: 1rem 1.25rem;
+		text-align: center;
 	}
 }
