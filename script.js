@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section[id]');
     const sidebar = document.querySelector('.sidebar');
     const menuToggle = document.querySelector('.menu-toggle');
+    const prevArrow = document.querySelector('.nav-prev');
+    const nextArrow = document.querySelector('.nav-next');
+
+    // Create array of section IDs in order
+    const sectionIds = Array.from(sections).map(section => section.getAttribute('id'));
+    let currentSectionIndex = 0;
 
     // Smooth scroll for navigation links
     navItems.forEach(item => {
@@ -43,13 +49,84 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Update nav items
         navItems.forEach(item => {
             item.classList.remove('active');
             if (item.getAttribute('href') === `#${currentSection}`) {
                 item.classList.add('active');
             }
         });
+
+        // Update current section index and arrow states
+        if (currentSection) {
+            currentSectionIndex = sectionIds.indexOf(currentSection);
+            updateArrowStates();
+        }
     }
+
+    // Update arrow button states
+    function updateArrowStates() {
+        // Disable previous arrow on first section
+        if (currentSectionIndex === 0) {
+            prevArrow.disabled = true;
+        } else {
+            prevArrow.disabled = false;
+        }
+
+        // Disable next arrow on last section
+        if (currentSectionIndex === sectionIds.length - 1) {
+            nextArrow.disabled = true;
+        } else {
+            nextArrow.disabled = false;
+        }
+    }
+
+    // Navigate to previous section
+    prevArrow.addEventListener('click', () => {
+        if (currentSectionIndex > 0) {
+            const prevSectionId = sectionIds[currentSectionIndex - 1];
+            const prevSection = document.getElementById(prevSectionId);
+            
+            if (prevSection) {
+                prevSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    });
+
+    // Navigate to next section
+    nextArrow.addEventListener('click', () => {
+        if (currentSectionIndex < sectionIds.length - 1) {
+            const nextSectionId = sectionIds[currentSectionIndex + 1];
+            const nextSection = document.getElementById(nextSectionId);
+            
+            if (nextSection) {
+                nextSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        // Close sidebar on Escape key
+        if (e.key === 'Escape' && sidebar.classList.contains('active')) {
+            sidebar.classList.remove('active');
+        }
+        
+        // Arrow key navigation
+        if (e.key === 'ArrowLeft' && !prevArrow.disabled) {
+            prevArrow.click();
+        }
+        
+        if (e.key === 'ArrowRight' && !nextArrow.disabled) {
+            nextArrow.click();
+        }
+    });
 
     // Update on scroll (with throttling for better performance)
     let scrollTimeout;
@@ -80,14 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        // Close sidebar on Escape key
-        if (e.key === 'Escape' && sidebar.classList.contains('active')) {
-            sidebar.classList.remove('active');
-        }
-    });
-
     // Handle window resize
     let resizeTimeout;
     window.addEventListener('resize', () => {
@@ -97,6 +166,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.innerWidth > 768) {
                 sidebar.classList.remove('active');
             }
+            // Update active nav item for new viewport
+            updateActiveNavItem();
         }, 250);
     });
 
