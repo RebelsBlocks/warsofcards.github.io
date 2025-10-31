@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Blackjack Game - Wars of Cards</title>
+    <meta name="description" content="Learn how to play multiplayer blackjack on Wars of Cards">
+    <link rel="stylesheet" href="warsofcards-styles.css">
+</head>
+<body>
+    <div id="loader" class="fullscreen-loader">
+        <div class="loader-content">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <div id="content" class="outer-container">
+        <div class="content-section">
+            <h1>🎲 The Blackjack Experience</h1>
+
+            <h2>Multiplayer Gameplay</h2>
+            <p>Wars of Cards features professional-grade multiplayer blackjack with real-time gameplay:</p>
+
+            <div class="step-box">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Join a Table</h4>
+                    <p>Choose from seats 1, 2, or 3. Each table supports up to three players with real-time WebSocket synchronization.</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Place Your Bet</h4>
+                    <p>Use your play money tokens to bet on each hand. All betting is handled on-chain for transparency and security.</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Play Your Turn</h4>
+                    <p>Make decisions when it's your turn: Hit, Stand, Double Down, or Split. Game logic runs on the server for fairness.</p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Real-Time Results</h4>
+                    <p>See results instantly with live updates — winnings are automatically processed and added to your balance.</p>
+                </div>
+            </div>
+
+            <h2>Game Features</h2>
+            <ul>
+                <li>Up to 3 players per table with WebSocket-powered real-time updates</li>
+                <li>All bets and payouts are recorded on the NEAR blockchain</li>
+                <li>Standard blackjack rules: Hit, Stand, Double, Split</li>
+                <li>Server-authoritative game logic prevents cheating</li>
+                <li>Automatic payout processing</li>
+            </ul>
+
+            <h2>Game Actions</h2>
+            <ul>
+                <li><strong>Hit</strong> — Draw another card to increase your hand value</li>
+                <li><strong>Stand</strong> — Keep your current hand and end your turn</li>
+                <li><strong>Double Down</strong> — Double your bet and receive exactly one more card</li>
+                <li><strong>Split</strong> — If you have two cards of the same value, split them into two separate hands</li>
+            </ul>
+
+            <h2>Payouts</h2>
+            <ul>
+                <li><strong>Blackjack</strong> — 3:2 payout (1.5× your play money bet)</li>
+                <li><strong>Win</strong> — 1:1 payout (2× your play money bet)</li>
+                <li><strong>Push</strong> — Return your original bet</li>
+                <li><strong>Bust</strong> — Lose your bet</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>💡 Pro Tip</strong>
+                <p>Basic blackjack strategy suggests standing on 17 or higher and hitting on 16 or lower. However, always consider the dealer's visible card!</p>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="wallet-connection.html" class="nav-button">← Previous: Wallet Connection</a>
+            <a href="community.html" class="nav-button">Next: Community →</a>
+        </div>
+    </div>
+
+    <script src="warsofcards-script.js"></script>
+</body>
+</html>
