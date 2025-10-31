@@ -1,9 +1,9 @@
 :root {
-    --text-color: #ffffff;
-    --background-color: rgba(0, 0, 50, 0.8);
-    --project-background: rgba(0, 0, 20, 0.9);
-    --accent-color: #ff69b4;
-    --button-bg: rgba(0, 0, 0, 0.7);
+    --text-color: #e8e8e8;
+    --background-color: rgba(26, 26, 46, 0.85);
+    --project-background: rgba(15, 20, 25, 0.92);
+    --accent-color: #4a9eff;
+    --button-bg: rgba(22, 33, 62, 0.8);
 }
 
 * {
@@ -22,20 +22,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://bafybeib2qommts7fwlnnnxmp2acnjm7gj32fsy4kxybvicbbr74eeea77q.ipfs.w3s.link/index.gif') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f1419 100%);
     overflow: auto;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 255, 0.3);
-    z-index: -1;
 }
 
 .outer-container {
@@ -105,12 +93,12 @@ a {
 }
 
 a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
     text-decoration: underline;
 }
 
 .info-box, .warning-box {
-    background: rgba(255, 105, 180, 0.1);
+    background: rgba(74, 158, 255, 0.08);
     border: 1px solid var(--accent-color);
     border-radius: 5px;
     padding: 1rem;
@@ -118,12 +106,12 @@ a:hover {
 }
 
 .warning-box {
-    background: rgba(255, 0, 0, 0.1);
-    border-color: #ff0000;
+    background: rgba(255, 100, 100, 0.08);
+    border-color: #ff6464;
 }
 
 .warning-box strong {
-    color: #ff0000;
+    color: #ff6464;
 }
 
 .step-box {
@@ -139,7 +127,7 @@ a:hover {
     min-width: 40px;
     height: 40px;
     background: var(--accent-color);
-    color: #000;
+    color: #0f1419;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -171,10 +159,10 @@ a:hover {
 }
 
 .menu-item:hover {
-    background: var(--text-color);
-    color: #000;
+    background: rgba(74, 158, 255, 0.15);
+    border-color: var(--accent-color);
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(74, 158, 255, 0.3);
 }
 
 .menu-item h3 {
@@ -211,10 +199,10 @@ a:hover {
 }
 
 .nav-button:hover {
-    background-color: var(--text-color);
-    color: black;
+    background-color: rgba(74, 158, 255, 0.2);
+    border-color: var(--accent-color);
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(74, 158, 255, 0.4);
 }
 
 /* Loading Screen */
@@ -224,7 +212,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0000FF;
+    background: linear-gradient(135deg, #16213e 0%, #0f1419 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,14 +241,14 @@ a:hover {
 
 .loader-content {
     text-align: center;
-    color: #FF0000;
+    color: #4a9eff;
     position: relative;
     z-index: 1;
 }
 
 .loader-content p {
     font-size: 1.5rem;
-    text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000;
+    text-shadow: 0 0 10px #4a9eff, 0 0 20px #4a9eff, 0 0 30px rgba(74, 158, 255, 0.5);
 }
 
 @keyframes scanlines {
