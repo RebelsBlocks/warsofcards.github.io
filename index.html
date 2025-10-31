@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wars of Cards Documentation - Multiplayer blackjack platform on NEAR blockchain with AI guide and community features">
+    <meta name="description" content="Wars of Cards Documentation - Simple, exciting card games on NEAR blockchain with AI guide and community features">
     <title>Wars of Cards Documentation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <span class="menu-icon">☰</span>
+        <span class="menu-text">Menu</span>
+    </button>
+
     <!-- Sidebar Navigation -->
     <aside class="sidebar">
         <div class="sidebar-header">
             <h1>Wars of Cards</h1>
-            <p class="version">v1.0</p>
         </div>
         <nav class="sidebar-nav">
             <a href="#introduction" class="nav-item">Introduction</a>
             <a href="#wallet-connection" class="nav-item">Wallet Connection</a>
             <a href="#blackjack-game" class="nav-item">Blackjack Game</a>
-            <a href="#whisper-ai" class="nav-item">Whisper AI Guide</a>
-            <a href="#community" class="nav-item">Community Platform</a>
+            <a href="#community" class="nav-item">Community</a>
             <a href="#getting-started" class="nav-item">Getting Started</a>
-            <a href="#faq" class="nav-item">FAQ</a>
+            <a href="#roadmap" class="nav-item">Roadmap</a>
         </nav>
     </aside>
 
@@ -31,16 +35,11 @@
             <!-- Introduction -->
             <section id="introduction">
                 <h1>Documentation</h1>
-                <p class="lead">Complete guide to the multiplayer blackjack platform on NEAR blockchain with AI guide, community features, and real-time gameplay.</p>
                 
                 <div class="info-box">
                     <strong>🎴 What is Wars of Cards?</strong>
-                    <p>Wars of Cards is a professional multiplayer blackjack platform built on NEAR Protocol. It features real-time gameplay for up to 3 players, AI guide (Whisper), on-chain community chat, NEAR Social, and is expanding to include poker. The platform combines classic card gaming with cutting-edge Web3 technology using play money tokens with rewards.</p>
-                </div>
-
-                <div class="info-box">
-                    <strong>🚀 Live Features</strong>
-                    <p>✅ Multiplayer Blackjack (3 players) • ✅ AI Whisper Guide • ✅ NEAR Social • 🚧 Poker in Development</p>
+                    <p>Wars of Cards is a hub for simple, exciting card games on NEAR. The goal is to create a space where players can compete daily, earn tokens, and co-create the community through feedback and engagement.</p>
+                    <p style="margin-top: 1rem;">You can chat with Whisper AI for personalized assistance: 👉 <a href="https://warsofcards.online/Whisper" target="_blank">https://warsofcards.online/Whisper</a></p>
                 </div>
             </section>
 
@@ -51,30 +50,17 @@
                 <h3>Why Connect Your Wallet?</h3>
                 <p>Connecting your NEAR wallet is essential for the full Wars of Cards experience:</p>
                 <ul>
-                    <li><strong>Real Ownership</strong> — Your play money tokens, your control. All assets are stored in your wallet.</li>
                     <li><strong>Secure Gaming</strong> — All transactions are verified on the NEAR blockchain using play money tokens.</li>
-                    <li><strong>Community Access</strong> — Participate in on-chain chat via custom contract.</li>
-                    <li><strong>AI Guide Access</strong> — Personalized assistance from Whisper AI.</li>
+                    <li><strong>Community Access</strong> — Participate in on-chain chat via a custom contract.</li>
                 </ul>
 
                 <h3>What Happens When Connected</h3>
                 <p>Once your wallet is connected, you can:</p>
                 <ul>
-                    <li><strong>Join Blackjack Tables</strong> — Take a seat at any available blackjack table (seats 1, 2, or 3)</li>
-                    <li><strong>Place Real Bets</strong> — Use your tokens to bet on hands with real payouts</li>
-                    <li><strong>Chat with Whisper</strong> — Get game strategies and Web3 guidance from our AI</li>
-                    <li><strong>Join Community</strong> — Participate in on-chain discussions and share experiences</li>
+                    <li>Take a seat at any available blackjack table (seats 1, 2, or 3).</li>
+                    <li>Use your tokens to bet on hands with real payouts.</li>
+                    <li>Participate in on-chain discussions and share experiences.</li>
                 </ul>
-
-                <div class="info-box">
-                    <strong>💰 NEAR Deposit for Transactions</strong>
-                    <p>You'll need to deposit a small amount of NEAR tokens to the contract to register your account. This is standard practice on NEAR Protocol and ensures your interactions can be processed on-chain.</p>
-                </div>
-
-                <div class="warning-box">
-                    <strong>⚠️ Important Security Note</strong>
-                    <p>Never share your wallet seed phrase with anyone. Wars of Cards will never ask for your seed phrase or private keys.</p>
-                </div>
             </section>
 
             <!-- Blackjack Game -->
@@ -88,7 +74,7 @@
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h4>Join a Table</h4>
-                        <p>Choose from seats 1, 2, or 3. Each table supports up to 3 players with real-time WebSocket synchronization.</p>
+                        <p>Choose from seats 1, 2, or 3. Each table supports up to three players with real-time WebSocket synchronization.</p>
                     </div>
                 </div>
 
@@ -112,136 +98,36 @@
                     <div class="step-number">4</div>
                     <div class="step-content">
                         <h4>Real-Time Results</h4>
-                        <p>See results instantly with live updates. Winnings are automatically processed and added to your balance.</p>
+                        <p>See results instantly with live updates — winnings are automatically processed and added to your balance.</p>
                     </div>
                 </div>
 
                 <h3>Game Features</h3>
-                <table>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Multiplayer</strong></td>
-                        <td>Up to 3 players per table with real-time synchronization</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Live Updates</strong></td>
-                        <td>WebSocket-powered real-time game state updates</td>
-                    </tr>
-                    <tr>
-                        <td><strong>On-Chain Betting</strong></td>
-                        <td>All bets and payouts are recorded on NEAR blockchain</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Professional Rules</strong></td>
-                        <td>Standard blackjack rules with Hit, Stand, Double, Split</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Fair Play</strong></td>
-                        <td>Server-authoritative game logic prevents cheating</td>
-                    </tr>
-                </table>
+                <ul>
+                    <li>Up to 3 players per table with WebSocket-powered real-time updates.</li>
+                    <li>All bets and payouts are recorded on the NEAR blockchain.</li>
+                    <li>Standard blackjack rules: Hit, Stand, Double, Split.</li>
+                    <li>Server-authoritative game logic prevents cheating.</li>
+                </ul>
 
                 <h3>Payouts</h3>
                 <ul>
-                    <li><strong>Blackjack</strong> — 3:2 payout (1.5x your play money bet)</li>
-                    <li><strong>Win</strong> — 1:1 payout (2x your play money bet)</li>
-                    <li><strong>Push</strong> — Return your original play money bet</li>
-                    <li><strong>Bust</strong> — Lose your play money bet</li>
+                    <li><strong>Blackjack</strong> — 3:2 payout (1.5× your play money bet).</li>
+                    <li><strong>Win</strong> — 1:1 payout (2× your play money bet).</li>
+                    <li><strong>Push</strong> — Return your original bet.</li>
+                    <li><strong>Bust</strong> — Lose your bet.</li>
                 </ul>
-            </section>
-
-            <!-- Whisper AI -->
-            <section id="whisper-ai">
-                <h2>🤖 Whisper - Your AI Guide</h2>
-
-                <h3>What Whisper Does</h3>
-                <p>Whisper is your intelligent guide and companion throughout your Wars of Cards experience:</p>
-
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <h4>🎮 Game Strategy</h4>
-                        <p>Explains blackjack rules, optimal strategies, and betting techniques to improve your gameplay</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4>💬 Platform Help</h4>
-                        <p>Assists with wallet connection, game navigation, and troubleshooting technical issues</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4>🌐 Web3 Guidance</h4>
-                        <p>Explains NEAR blockchain concepts, wallet management, and Web3 technology</p>
-                    </div>
-                    <div class="feature-item">
-                        <h4>🎯 Personalized Support</h4>
-                        <p>Provides tailored advice based on your wallet connection and current game state</p>
-                    </div>
-                </div>
-
-                <h3>How to Chat with Whisper</h3>
-                <ol>
-                    <li>Connect your NEAR wallet to the platform</li>
-                    <li>Navigate to the Whisper chat interface</li>
-                    <li>Type your message or question in the chat box</li>
-                    <li>Whisper will respond with helpful information and guidance</li>
-                    <li>Continue the conversation to get personalized assistance</li>
-                </ol>
-
-                <div class="tip-box">
-                    <strong>💡 Pro Tip</strong>
-                    <p>Whisper can help you understand both blackjack strategy and Web3 concepts. Ask about specific game situations or general platform questions!</p>
-                </div>
             </section>
 
             <!-- Community -->
             <section id="community">
-                <h2>🌐 The Community Platform</h2>
+                <h2>🌐 The Community</h2>
 
-                <h3>NEAR Social Integration</h3>
-                <p>Wars of Cards features NEAR Social integration that fetches posts from warsofcards.near to display as the main feed in the community chat:</p>
-
-                <h4>Community Features</h4>
+                <h3>Features</h3>
                 <ul>
-                    <li>View posts from warsofcards.near on NEAR Social</li>
-                    <li>Community chat powered by custom on-chain contract</li>
-                    <li>Share game experiences and strategies</li>
-                    <li>Connect with other players and Web3 enthusiasts</li>
-                    <li>All interactions stored on NEAR blockchain</li>
+                    <li>View posts from warsofcards.near on NEAR Social.</li>
+                    <li>Participate in on-chain community chat.</li>
                 </ul>
-
-                <h4>Community Capabilities</h4>
-                <ul>
-                    <li><strong>Live Posts</strong> — View posts from warsofcards.near through NEAR Social integration</li>
-                    <li><strong>On-Chain Chat</strong> — Participate in real-time chat powered by custom contract</li>
-                    <li><strong>Strategy Discussions</strong> — Learn from other players and share tips</li>
-                    <li><strong>Web3 Community</strong> — Connect with NEAR ecosystem users</li>
-                    <li><strong>Transparent Interactions</strong> — All community activity is on-chain and verifiable</li>
-                </ul>
-
-                <h3>Platform Value</h3>
-                <table>
-                    <tr>
-                        <th>Benefit</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Real Gaming</strong></td>
-                        <td>Play actual multiplayer blackjack with real stakes and payouts</td>
-                    </tr>
-                    <tr>
-                        <td><strong>AI Assistance</strong></td>
-                        <td>Get personalized help and strategy advice from Whisper AI</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Community</strong></td>
-                        <td>Connect with other players through on-chain social features</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Web3 Innovation</strong></td>
-                        <td>Experience cutting-edge blockchain gaming technology</td>
-                    </tr>
-                </table>
             </section>
 
             <!-- Getting Started -->
@@ -249,102 +135,48 @@
                 <h2>🚀 Getting Started</h2>
 
                 <h3>Step 1: Get a NEAR Wallet</h3>
-                <ol>
-                    <li>Visit <a href="https://meteorwallet.app/" target="_blank">Meteor Wallet</a> or your preferred NEAR wallet provider</li>
-                    <li>Create a new account or import an existing one</li>
-                    <li>Write down your seed phrase and store it safely</li>
-                    <li>Fund your wallet with some NEAR tokens for transactions</li>
-                </ol>
+                <p>Only <strong>Meteor Wallet</strong>, <strong>MyNearWallet</strong>, and <strong>Intear Wallet</strong> are supported. These wallets use Function Call Access Keys, enabling automatic transaction signing for seamless gameplay.</p>
+                <p>🔗 <a href="https://meteorwallet.app/" target="_blank">Get started with a NEAR wallet</a></p>
 
                 <div class="warning-box">
                     <strong>⚠️ Critical Security Step</strong>
-                    <p>Your seed phrase is the ONLY way to recover your wallet. Write it down on paper, never store it digitally, and NEVER share it with anyone.</p>
+                    <p>Never share your wallet seed phrase with anyone. Your seed phrase is the only way to recover your wallet account. Wars of Cards will never ask for your seed phrase or private keys.</p>
                 </div>
 
-                <h3>Step 2: Connect to Wars of Cards</h3>
+                <h3>Step 2: Connect to Blackjack and Start Playing</h3>
                 <ol>
-                    <li>Navigate to the Wars of Cards platform</li>
-                    <li>Click the "Connect Wallet" button</li>
-                    <li>Select your wallet from the list of options</li>
-                    <li>Approve the connection request in your wallet</li>
-                    <li>Verify that you can see your account information</li>
+                    <li>Go to <a href="https://blackjack.warsofcards.online/" target="_blank">https://blackjack.warsofcards.online/</a></li>
+                    <li>Click "Connect Wallet."</li>
+                    <li>Choose your wallet and approve the connection request.</li>
+                    <li><strong>Deposit Storage:</strong> You'll need to deposit 0.0123 NEAR tokens to the contract to register your account. This ensures your interactions can be processed on-chain.</li>
+                    <li>After a successful deposit, claim your daily 100 CARDS, which will be used for betting.</li>
+                    <li>Click an empty seat (1, 2, or 3).</li>
+                    <li>Choose how many play money tokens to wager.</li>
+                    <li>Make your Hit / Stand / Split / Double decisions.</li>
+                    <li>Winnings are added automatically.</li>
                 </ol>
 
-                <h3>Step 3: Start Playing Blackjack</h3>
-                <ol>
-                    <li><strong>Join a Table</strong> — Click on an empty seat (1, 2, or 3)</li>
-                    <li><strong>Place a Bet</strong> — Choose how many play money tokens to wager</li>
-                    <li><strong>Play Your Hand</strong> — Make hit/stand decisions when it's your turn</li>
-                    <li><strong>Collect Winnings</strong> — If you win, play money tokens are added to your balance automatically</li>
-                </ol>
-
-                <h3>Step 4: Explore All Features</h3>
+                <h3>Step 3: Connect to Wars of Cards and Explore All Features</h3>
                 <ul>
-                    <li><strong>Chat with Whisper</strong> — Get game strategies and platform help</li>
-                    <li><strong>Join Community</strong> — Participate in on-chain discussions</li>
-                    <li><strong>Stay Updated</strong> — Follow development of poker and other games</li>
+                    <li>Chat with Whisper AI → <a href="https://warsofcards.online/Whisper" target="_blank">https://warsofcards.online/Whisper</a></li>
+                    <li>Join on-chain discussions → <a href="https://warsofcards.online/Community" target="_blank">https://warsofcards.online/Community</a></li>
+                    <li>Follow updates on new games and features.</li>
                 </ul>
             </section>
 
-            <!-- FAQ -->
-            <section id="faq">
-                <h2>❓ Frequently Asked Questions</h2>
+            <!-- Roadmap -->
+            <section id="roadmap">
+                <h2>🗺️ Roadmap</h2>
 
-                <div class="faq-item">
-                    <h3>Is this real multiplayer blackjack?</h3>
-                    <p>Yes! Wars of Cards features professional multiplayer blackjack with up to 3 players, real-time gameplay, and actual token betting with payouts.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How many players can play at once?</h3>
-                    <p>Each blackjack table supports up to 3 players simultaneously, with real-time WebSocket synchronization for live gameplay.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What tokens do I use for betting?</h3>
-                    <p>The platform uses play money card tokens for betting (purchased with NEAR). All transactions are recorded on the NEAR blockchain for transparency and security.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Why do I need to deposit NEAR tokens?</h3>
-                    <p>You need to deposit a small amount of NEAR tokens to the contract to cover blockchain transaction fees (gas fees) when interacting with the platform. This is standard for all NEAR Protocol applications and ensures your transactions can be processed on-chain. The amount is minimal and only covers the computational costs of your interactions.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Is the game fair?</h3>
-                    <p>Yes. The game uses server-authoritative logic with standard blackjack rules. All betting and payouts are recorded on-chain for full transparency.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What is NEAR Social integration?</h3>
-                    <p>NEAR Social integration fetches posts from warsofcards.near and displays them as the main feed in the community chat. The community chat itself uses a custom on-chain contract for player interactions.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How does Whisper AI help me?</h3>
-                    <p>Whisper provides game strategy advice, explains blackjack rules, helps with platform navigation, and can answer questions about Web3 technology.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What about poker?</h3>
-                    <p>Poker is currently in development and will be added to the platform. Follow community updates to stay informed about new game releases.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Which wallets are supported?</h3>
-                    <p>Wars of Cards supports all standard NEAR Protocol wallets, including Meteor Wallet, NEAR Wallet, and Sender Wallet.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Is this secure?</h3>
-                    <p>Yes. All wallet operations are handled by wallet provider, and the platform never has access to your private keys. All game transactions are recorded on the NEAR blockchain.</p>
+                <div class="info-box">
+                    <p>✅ <strong>Community Chat</strong> — On-chain community discussions integrated with NEAR Social.</p>
+                    <p>✅ <strong>3-Player Blackjack</strong> — Live multiplayer blackjack with on-chain betting and real-time updates.</p>
+                    <p>🚧 <strong>7-Player Poker</strong> — In development, planned for Q4 2025.</p>
                 </div>
             </section>
         </article>
-
-        <!-- Footer -->
-        <footer class="doc-footer">
-        </footer>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
