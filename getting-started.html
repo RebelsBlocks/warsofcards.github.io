@@ -10,92 +10,122 @@
 <body>
     <div id="content" class="outer-container">
         <div class="content-section">
-            <h1>🚀 Getting Started</h1>
+            <h1>Getting Started</h1>
 
-            <h2>Step 1: Get a NEAR Wallet</h2>
-            <p>Only <strong>Meteor Wallet</strong>, <strong>MyNearWallet</strong>, and <strong>Intear Wallet</strong> are supported. 
-            <p>These wallets use Function Call Access Keys, enabling automatic transaction signing for seamless gameplay.</p>
-            <p>Never share your wallet seed phrase with anyone. Your seed phrase is the only way to recover your wallet account.</p>
+            <h2>Step 1: Login via NEAR Wallet</h2>
 
-            <div class="info-box">
-                <strong>⚠️ Wallet URLs</strong>
-                <p>Wars of Cards will never ask for your seed phrase or private keys.</p>
+            <h3>1.1 Get a NEAR Wallet</h3>
 
-                <p> - > <a href="https://meteorwallet.app/" target="_blank">https://meteorwallet.app/</a></p>
-                <p> - > <a href="https://app.mynearwallet.com/" target="_blank">https://app.mynearwallet.com/</a></p>
-                <p> - > <a href="https://wallet.intear.tech/" target="_blank">https://wallet.intear.tech/</a></p>
-            </div>
-
-            <h2>Step 2: Connect NEAR Wallet</h2>
-            
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h4>Visit the Blackjack Lobby</h4>
-                    <p><a href="https://blackjack.warsofcards.online/" target="_blank">https://blackjack.warsofcards.online/</a></p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h4>Connect</h4>
-                    <p>Click "Connect Wallet", choose your favorite wallet, and approve the connection request.</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h4>Deposit Storage</h4>
-                    <p>You'll need to deposit 0.0123 NEAR tokens to register your account.</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h4>Claim Daily CARDS</h4>
-                    <p>After successful deposit, claim your daily 100 CARDS tokens, which will be used for betting.</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h4>Take a Seat</h4>
-                    <p>Click an empty seat (1, 2, or 3) to join the table.</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">6</div>
-                <div class="step-content">
-                    <h4>Place Your Bet</h4>
-                    <p>Choose how many play money tokens to wager on your hand.</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">7</div>
-                <div class="step-content">
-                    <h4>Play!</h4>
-                    <p>Make your Hit / Stand / Split / Double decisions. Winnings are added automatically.</p>
-                </div>
-            </div>                
-
-            <div class="info-box">
-                <strong>💡 Explore All Features</strong>
-                <ul>
-                <li>Chat with Whisper → <a href="https://warsofcards.online/Whisper" target="_blank">https://warsofcards.online/Whisper</a></li>
-                <li>Participate in on-chain discussions (pre governance) → <a href="https://warsofcards.online/Community" target="_blank">https://warsofcards.online/Community</a></li>
+            <p>
+                ⚠️ <strong>Security Notice</strong><br>
+                Wars of Cards will <strong>never</strong> ask for your seed phrase or private keys. Never share them with anyone. You wouldn't give a stranger the keys to your home.<br>
+                <strong>Simplest comparison:</strong>
+            </p>
+            <ul>
+                <li><strong>Wallet address</strong> = bank account number (you can give to anyone)</li>
+                <li><strong>Private key/seeds phrases</strong> = PIN + bank password (never show anyone)</li>
             </ul>
-            </div>
+
+            <p><strong>Wallets:</strong></p>
+            <ul>
+                <li>Meteor Wallet → <a href="https://wallet.meteorwallet.app/" target="_blank" rel="noreferrer">https://wallet.meteorwallet.app/</a></li>
+                <li>MyNearWallet → <a href="https://app.mynearwallet.com/" target="_blank" rel="noreferrer">https://app.mynearwallet.com/</a> <em>(VPN not supported)</em></li>
+                <li>Intear Wallet → <a href="https://wallet.intear.tech/" target="_blank" rel="noreferrer">https://wallet.intear.tech/</a></li>
+            </ul>
+
+            <p>While all wallets support <strong>Function Call Access Keys</strong> for automatic transaction signing, only three provide a true plug-and-play experience suitable for multiplayer gaming.</p>
+
+            <p><strong>Note:</strong> Claiming tokens, depositing, and withdrawing <strong>still require explicit user signatures</strong>.</p>
+
+            <h3>1.2 Connect to the Blackjack Lobby</h3>
+            
+            <ol>
+                <li>Visit: <a href="https://blackjack.warsofcards.online/" target="_blank">https://blackjack.warsofcards.online/</a></li>
+                <li>Click <strong>Enter The Forest</strong></li>
+                <li>Choose your wallet and sign the transaction adding a <strong>limited Function Call Key</strong></li>
+            </ol>
+
+            <p><strong>Recommended browsers:</strong> Chrome or Firefox for best gameplay experience.</p>
+
+            <h2>Step 2: Lobby</h2>
+
+            <h3>2.1 Deposit Storage</h3>
+            <p>To register your account:</p>
+            <ul>
+                <li><strong>0.0123 NEAR</strong> — Blackjack contract storage</li>
+                <li><strong>0.0013 NEAR</strong> — Token contract storage</li>
+            </ul>
+
+            <h3>2.2 Claim Daily CARDS</h3>
+            <p>Before playing Blackjack, you must claim <strong>CARDS tokens</strong>.</p>
+            <ul>
+                <li><strong>50 CARDS every 24 hours</strong></li>
+                <li>Minimum bet: <strong>10 CARDS</strong> → at least <strong>5 rounds daily</strong> even with bad luck</li>
+                <li>Daily claim amount is <strong>modifiable by the contract owner</strong></li>
+            </ul>
+
+            <h3>2.3 Purchase CARDS</h3>
+            <p>You can purchase token packs directly from the token contract:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pack</th>
+                        <th>CARDS</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First</td>
+                        <td>100</td>
+                        <td>1 NEAR</td>
+                    </tr>
+                    <tr>
+                        <td>Second</td>
+                        <td>320</td>
+                        <td>3 NEAR</td>
+                    </tr>
+                    <tr>
+                        <td>Third</td>
+                        <td>600</td>
+                        <td>5 NEAR</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Pack pricing and sizes can be modified by the contract owner.</p>
+
+            <h3>2.4 Take a Seat or Take a Look</h3>
+            <ul>
+                <li><strong>Join Battle</strong> — Join the table (up to 3 players)</li>
+                <li><strong>Observe</strong> — Spectate if all seats are occupied</li>
+            </ul>
+
+            <h2>Step 3: Table</h2>
+
+            <h3>3.1 Place Your Bet</h3>
+            <p>Available bet sizes:</p>
+            <ul>
+                <li>10 CARDS</li>
+                <li>30 CARDS</li>
+                <li>50 CARDS</li>
+                <li>100 CARDS</li>
+            </ul>
+
+            <h3>3.2 Make Your Move</h3>
+            <ul>
+                <li><strong>Hit / Stand</strong> → off-chain (instant results)</li>
+                <li><strong>Split / Double</strong> → on-chain (tokens burned via supply reduction)</li>
+            </ul>
+            <p>Higher risk actions unlock <strong>higher rewards</strong>.</p>
+            <p>All winnings are automatically credited to your in-contract balance.</p>
+
+            <h3>3.3 Chat</h3>
+            <p>Chat with seated players or spectators during live gameplay.</p>
         </div>
 
         <div class="navigation-buttons">
             <a href="introduction.html" class="nav-button">← Previous: Introduction</a>
-            <a href="blackjack-game.html" class="nav-button">Next: Blackjack Game →</a>
+            <a href="blackjack-game.html" class="nav-button">Next: Blackjack Rules →</a>
         </div>
     </div>
 
