@@ -10,68 +10,121 @@
 <body>
     <div id="content" class="outer-container">
         <div class="content-section">
-            <h1>🎴 Blackjack</h1>
+            <h1>Blackjack Game</h1>
+
+            <h3>Blackjack Contract</h3>
+            <p><strong><a href="https://nearblocks.io/address/blackjack-v2.warsofcards.near" target="_blank" rel="noreferrer">blackjack-v2.warsofcards.near</a></strong></p>
+
+            <h2>Objective</h2>
+            <p>Beat the dealer by getting as close to <strong>21</strong> as possible without exceeding it.</p>
+
+            <h2>Card Values</h2>
+            <ul>
+                <li><strong>Ace:</strong> 11 or 1</li>
+                <li><strong>Face cards (J, Q, K):</strong> 10</li>
+                <li><strong>Number cards:</strong> face value</li>
+            </ul>
+
+            <h2>Dealer Rules</h2>
+            <ul>
+                <li>Hits on <strong>16 or less</strong></li>
+                <li>Stands on <strong>17 or more</strong></li>
+                <li>Uses a <strong>6-deck shoe</strong> (312 cards)</li>
+            </ul>
 
             <h2>Actions</h2>
             <ul>
-                <li><strong>Hit</strong> — Draw another card to increase your hand value</li>
-                <li><strong>Stand</strong> — Keep your current hand and end your turn</li>
-                <li><strong>Double Down</strong> — Double your bet and receive exactly one more card</li>
-                <li><strong>Split</strong> — If you have two cards of the same value, split them into two separate hands</li>
+                <li><strong>Hit</strong> — Draw another card</li>
+                <li><strong>Stand</strong> — End your turn</li>
+                <li><strong>Double Down</strong> — Double your bet, receive one card</li>
+                <li><strong>Split</strong> — Split two equal-value cards into separate hands</li>
             </ul>
-
-
-            <h2>How To Play</h2>
-
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h4>Take a Seat</h4>
-                    <p>Choose from seats 1, 2, or 3</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h4>Place Your Bet</h4>
-                    <p>Use your tokens to bet on each hand</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h4>Make Decisions</h4>
-                    <p>Make decisions when it's your turn</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h4>Round End</h4>
-                    <p>See the round results</p>
-                </div>
-            </div>
 
             <h2>Payouts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Result</th>
+                        <th>Payout</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blackjack</td>
+                        <td>3:2</td>
+                    </tr>
+                    <tr>
+                        <td>Win</td>
+                        <td>1:1</td>
+                    </tr>
+                    <tr>
+                        <td>Push</td>
+                        <td>Bet returned</td>
+                    </tr>
+                    <tr>
+                        <td>Bust</td>
+                        <td>Lose bet</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Payout Examples — Split & Double</h2>
+
+            <h3>Example 1: Mixed Results</h3>
             <ul>
-                <li><strong>Blackjack</strong> — 3:2 payout</li>
-                <li><strong>Win</strong> — 1:1 payout</li>
-                <li><strong>Push</strong> — Return your original bet</li>
-                <li><strong>Bust</strong> — Lose your bet</li>
+                <li>Initial bet: <strong>30</strong></li>
+                <li>Split → 2 hands (30 + 30 = 60)</li>
+            </ul>
+            <p><strong>Hand 1:</strong></p>
+            <ul>
+                <li>Bust → <strong>0 payout</strong></li>
+            </ul>
+            <p><strong>Hand 2:</strong></p>
+            <ul>
+                <li>Double → bet becomes 60</li>
+                <li>Push → <strong>60 returned</strong></li>
+            </ul>
+            <p><strong>Final:</strong></p>
+            <ul>
+                <li>Total bet: 60</li>
+                <li>Total payout: 60</li>
+                <li>Net result: <strong>Break even</strong></li>
             </ul>
 
-            <div class="info-box">
-                <strong>💡 Tip</strong>
-                <p>Dealer stands on 17 or higher and hits on 16 or lower!</p>
-            </div>
+            <h3>Example 2: Double Blackjacks</h3>
+            <ul>
+                <li>Initial bet: <strong>100</strong></li>
+                <li>Split → 2 hands</li>
+            </ul>
+            <p><strong>Both hands:</strong></p>
+            <ul>
+                <li>Double → 200 each</li>
+                <li>Blackjack → 200 × 2.5 = 500</li>
+            </ul>
+            <p><strong>Final:</strong></p>
+            <ul>
+                <li>Total bet: 400</li>
+                <li>Total payout: 1000</li>
+                <li>Net result: <strong>+600 profit</strong></li>
+            </ul>
+
+            <h2>Leaderboard</h2>
+            <p>The Blackjack contract tracks:</p>
+            <ul>
+                <li><code>total_winnings</code></li>
+                <li><code>total_burned</code></li>
+            </ul>
+            <p><strong>Leaderboard rules:</strong></p>
+            <ul>
+                <li>Sorted by <strong>total winnings</strong></li>
+                <li>Only players with <strong>at least one win</strong> appear</li>
+            </ul>
+            <p>Keep winning to climb the ranks.</p>
         </div>
 
         <div class="navigation-buttons">
             <a href="getting-started.html" class="nav-button">← Previous: Getting Started</a>
-            <a href="community.html" class="nav-button">Next: Community →</a>
+            <a href="cards-token.html" class="nav-button">Next: CARDS Token →</a>
         </div>
     </div>
 
