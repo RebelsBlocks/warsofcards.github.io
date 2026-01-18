@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Blackjack Game - Wars of Cards</title>
+    <title>Blackjack - Wars of Cards</title>
     <meta name="description" content="Learn how to play multiplayer blackjack on Wars of Cards">
     <link rel="stylesheet" href="warsofcards-styles.css">
 </head>
 <body>
     <div id="content" class="outer-container">
         <div class="content-section">
-            <h1>Blackjack Game</h1>
+            <h1>Blackjack</h1>
 
-            <h3>Blackjack Contract</h3>
+            <h3>Contract Details</h3>
             <p><strong><a href="https://nearblocks.io/address/blackjack-v2.warsofcards.near" target="_blank" rel="noreferrer">blackjack-v2.warsofcards.near</a></strong></p>
+            <p>The Blackjack contract is a seat-based game management contract that operates as a single table for up to 3 players. It functions as bookkeeping logic, managing game state, round progression, and token operations while delegating actual game logic to the off-chain server.</p>
+            <p>The contract's structure is designed to be table-scoped, making it suitable for a multi-table architecture using NEAR sub-accounts, where each sub-account (e.g., <code>table1.blackjack-v3.warsofcards.near</code>) would manage its own isolated game state while sharing token operations through a parent contract.</p>
+            <p>The contract maintains a tracking of CARDS token usage by players (<code>total_winnings</code> and <code>total_burned</code>). Leaderboard is sorted by total winnings, where only players with at least one win appear.</p> 
 
             <h2>Objective</h2>
             <p>Beat the dealer by getting as close to <strong>21</strong> as possible without exceeding it.</p>
@@ -107,24 +110,11 @@
                 <li>Total payout: 1000</li>
                 <li>Net result: <strong>+600 profit</strong></li>
             </ul>
-
-            <h2>Leaderboard</h2>
-            <p>The Blackjack contract tracks:</p>
-            <ul>
-                <li><code>total_winnings</code></li>
-                <li><code>total_burned</code></li>
-            </ul>
-            <p><strong>Leaderboard rules:</strong></p>
-            <ul>
-                <li>Sorted by <strong>total winnings</strong></li>
-                <li>Only players with <strong>at least one win</strong> appear</li>
-            </ul>
-            <p>Keep winning to climb the ranks.</p>
         </div>
 
         <div class="navigation-buttons">
             <a href="getting-started.html" class="nav-button">← Previous: Getting Started</a>
-            <a href="cards-token.html" class="nav-button">Next: CARDS Token →</a>
+            <a href="tokenomics.html" class="nav-button">Next: Tokenomics →</a>
         </div>
     </div>
 
