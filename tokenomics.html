@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Tokenomics - Wars of Cards</title>
+    <meta name="description" content="Learn about the CARDS token mechanics and economics">
+    <link rel="stylesheet" href="warsofcards-styles.css">
+</head>
+<body>
+    <div id="content" class="outer-container">
+        <div class="content-section">
+            <h1>Tokenomics</h1>
+
+            <h3>Token Contract Address</h3>
+            <p><strong><a href="https://nearblocks.io/address/ft.warsofcards.near" target="_blank" rel="noreferrer">ft.warsofcards.near</a></strong></p>
+
+            <h2>Token Mechanics</h2>
+            <p>The CARDS token uses a whitelisted permission architecture that allows approved game contracts to mint rewards and burn bets. This enables seamless integration of games like Blackjack (Live) and Poker (Coming Soon) without changing the core token logic. Once a contract is whitelisted, it automatically gains mint/burn permissions, making Wars of Cards a scalable multi-game token economy.</p>            
+            <h3>Token Acquisition</h3>
+            <ul>
+                <li>Daily free claims</li>
+                <li>CARDS token packs purchases</li>
+                <li>Game winnings (minted by authorized game contracts)</li>
+            </ul>
+
+            <h3>Token Consumption</h3>
+            <ul>
+                <li>Burning during gameplay</li>
+                <li>Users cannot burn tokens directly, only games can burn</li>
+            </ul>
+
+            <h2>Supply Model</h2>
+            <p>CARDS token features an unlimited supply model with dynamic circulation, where supply is naturally regulated by game mechanics rather than fixed caps. This supply-agnostic design allows the ecosystem to scale across multiple games without artificial constraints, supporting unlimited growth of the Wars of Cards World.</p>
+            
+            <h3>Supply Calculation</h3>
+            <p><strong>Circulating supply = total_minted − total_burned</strong></p>
+            
+            <h3>Tracked Values</h3>
+            <ul>
+                <li><code>total_supply</code> — current total supply</li>
+                <li><code>total_minted</code> — cumulative tokens minted</li>
+                <li><code>total_burned</code> — cumulative tokens burned</li>
+            </ul>
+
+            <h2>Treasury</h2>
+            <p>The Treasury operates as the central revenue collection mechanism and increases with player activity.</p>
+            
+            <h3>Revenue Sources</h3>
+            <ol>
+                <li><strong>Transfer fees</strong> — 7% on non-whitelisted token transfers (tracked via <code>total_fees_collected</code>)</li>
+                <li><strong>Pack purchases</strong> — 100% of NEAR deposits from CARDS Pack sales</li>
+            </ol>
+            
+            <p><strong>Treasury NEAR account:</strong> <a href="https://nearblocks.io/address/treasury.warsofcards.near" target="_blank" rel="noreferrer">treasury.warsofcards.near</a></p>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="blackjack.html" class="nav-button">← Previous: Blackjack</a>
+            <a href="roadmap.html" class="nav-button">Next: Roadmap →</a>
+        </div>
+    </div>
+
+    
+</body>
+</html>
