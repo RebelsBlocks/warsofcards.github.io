@@ -536,7 +536,20 @@ body.centered-content .content-section {
 	border-top: 1px solid rgba(var(--dark-border), 0.3);
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.tree-footer-row {
+	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+.tree-footer-row-links {
+	gap: 1rem 1.5rem;
+	flex-wrap: wrap;
 }
 
 .tree-footer-link {
